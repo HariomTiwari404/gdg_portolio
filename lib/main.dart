@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_gdg/widgets/about_section.dart';
 import 'package:portfolio_gdg/widgets/image_and_skills.dart';
 import 'package:portfolio_gdg/widgets/nav_bar.dart';
+import 'package:portfolio_gdg/widgets/project_section.dart';
+import 'package:portfolio_gdg/widgets/skills_section.dart';
 import 'package:portfolio_gdg/widgets/title_section.dart';
 
 void main() {
@@ -37,6 +40,11 @@ class _PortfolioAppState extends State<PortfolioApp> {
                     ImageAndSkills(
                       screenWidth: screenWidth,
                     ),
+                    AboutSection(
+                      screenWidth: screenWidth,
+                    ),
+                    SkillsSection(screenWidth: screenWidth),
+                    ProjectSection(screenWidth: screenWidth),
                   ],
                 ));
           },
