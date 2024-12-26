@@ -15,19 +15,20 @@ class AboutSection extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: basePadding * 0.1,
-          horizontal: screenWidth > 800 ? basePadding : basePadding * 0.5),
+        vertical: basePadding * 0.1,
+        horizontal: screenWidth > 800 ? basePadding : basePadding * 0.5,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "ABOUT",
+            'ABOUT',
             style: GoogleFonts.poppins(
-                fontSize: titleFontSize, fontWeight: FontWeight.w400),
+              fontSize: titleFontSize,
+              fontWeight: FontWeight.w400,
+            ),
           ),
-          SizedBox(
-            height: basePadding * 0.1,
-          ),
+          SizedBox(height: basePadding * 0.1),
           Text(
             'Recent Electronics and Communication Engineering graduate with strong foundational knowledge '
             'in C language, Dart, Flutter, app development, and web development (HTML and CSS). '
@@ -35,7 +36,7 @@ class AboutSection extends StatelessWidget {
             'to apply technical skills and contribute to innovative projects, while continuously learning and growing '
             'within a dynamic organization.',
             style: GoogleFonts.poppins(fontSize: bodyFontSize, height: 1.75),
-          )
+          ),
         ],
       ),
     );
